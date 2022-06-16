@@ -14,10 +14,13 @@ public class BinarySearch
 			
 			if(array[mid] < target) {
 				low = mid + 1;
+				System.out.println("Target " + target + " not found, setting low to " + low);
 			} else if (array[mid] > target) {
 				high = mid - 1;
+				System.out.println("Target " + target + " not found, setting high to " + high);
 			} else {
 				System.out.println("Target " + target + " is at index " + mid);
+				return;
 			}
 		}
 		
